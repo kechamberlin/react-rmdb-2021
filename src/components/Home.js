@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useHomeFetch } from '../hooks/useHomeFetch';
 import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL } from '../config';
 import HeroImage from './HeroImage';
+import Grid from './Grid';
 import NoImage from '../images/no_image.jpg';
 
 export default function Home() {
