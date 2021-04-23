@@ -9,7 +9,7 @@ import Spinner from './Spinner';
 import SearchBar from './SearchBar';
 
 export default function Home() {
-  const { state, loading, error } = useHomeFetch();
+  const { state, loading, error, searchTerm, setSearchTerm } = useHomeFetch();
 
   console.log(state);
 
