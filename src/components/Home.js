@@ -21,6 +21,8 @@ export default function Home() {
 
   console.log(state);
 
+  if (error) return <div>Something went wrong...</div>;
+
   return (
     <>
       {!searchTerm && state.results[0] ? (
