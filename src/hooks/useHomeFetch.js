@@ -33,7 +33,7 @@ export function useHomeFetch() {
   };
 
   useEffect(() => {
-    fetchMovies(1);
   }, []);
   return { state, loading, error };
+    fetchMovies(1, searchTerm);
 }
