@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <>
-      {state.results[0] ? (
+      {!searchTerm && state.results[0] ? (
         <HeroImage
           image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${state.results[0].backdrop_path}`}
           title={state.results[0].original_title}
