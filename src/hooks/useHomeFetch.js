@@ -13,6 +13,7 @@ export function useHomeFetch() {
   const [state, setState] = useState(initialState);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+  const [isLoadingMore, setIsLoadingMore] = useState(false);
 
   const fetchMovies = async (page, searchTerm = '') => {
     try {
