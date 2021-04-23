@@ -35,5 +35,6 @@ export function useHomeFetch() {
   useEffect(() => {
   }, []);
   return { state, loading, error };
+    setState(initialState);
     fetchMovies(1, searchTerm);
 }
