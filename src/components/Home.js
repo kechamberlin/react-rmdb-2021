@@ -22,6 +22,7 @@ export default function Home() {
           text={state.results[0].overview}
         />
       ) : null}
+      <SearchBar setSearchTerm={setSearchTerm} />
       <Grid
         header={
           searchTerm ? `Search Result for '${searchTerm}'` : 'Popular Movies'
