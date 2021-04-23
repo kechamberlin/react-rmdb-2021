@@ -6,10 +6,10 @@ import { GlobalStyle } from './GlobalStyle';
 
 export default function App() {
   return (
-    <div className="App">
+    <Router>
       <Header />
       <Home />
       <GlobalStyle />
-    </div>
+    </Router>
   );
 }
