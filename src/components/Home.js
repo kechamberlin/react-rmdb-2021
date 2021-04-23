@@ -10,7 +10,14 @@ import SearchBar from './SearchBar';
 import Button from './Button';
 
 export default function Home() {
-  const { state, loading, error, searchTerm, setSearchTerm } = useHomeFetch();
+  const {
+    state,
+    loading,
+    error,
+    searchTerm,
+    setSearchTerm,
+    setIsLoadingMore,
+  } = useHomeFetch();
 
   console.log(state);
 
