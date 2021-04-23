@@ -19,6 +19,11 @@ export default function Home() {
           text={state.results[0].overview}
         />
       ) : null}
+      <Grid header="Popular Movies">
+        {state.results.map((movie) => (
+          <div key={movie.id}>{movie.title}</div>
+        ))}
+      </Grid>
     </>
   );
 }
