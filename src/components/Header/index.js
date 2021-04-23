@@ -8,7 +8,9 @@ export default function Header() {
   return (
     <Wrapper>
       <Content>
-        <LogoImg src={RMDBLogo} alt="rmdb-logo" />
+        <Link to="/">
+          <LogoImg src={RMDBLogo} alt="rmdb-logo" />
+        </Link>
         <TMDBLogoImg src={TMDBLogo} alt="tmdb-logo" />
       </Content>
     </Wrapper>
