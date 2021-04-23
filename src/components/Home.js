@@ -5,6 +5,7 @@ import HeroImage from './HeroImage';
 import Grid from './Grid';
 import NoImage from '../images/no_image.jpg';
 import Thumb from './Thumb';
+import Spinner from './Spinner';
 
 export default function Home() {
   const { state, loading, error } = useHomeFetch();
