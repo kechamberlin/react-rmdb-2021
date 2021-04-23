@@ -22,7 +22,11 @@ export default function Home() {
           text={state.results[0].overview}
         />
       ) : null}
-      <Grid header="Popular Movies">
+      <Grid
+        header={
+          searchTerm ? `Search Result for '${searchTerm}'` : 'Popular Movies'
+        }
+      >
         {state.results.map((movie) => (
           <Thumb
             key={movie.id}
