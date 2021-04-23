@@ -7,6 +7,7 @@ import NoImage from '../images/no_image.jpg';
 import Thumb from './Thumb';
 import Spinner from './Spinner';
 import SearchBar from './SearchBar';
+import Button from './Button';
 
 export default function Home() {
   const { state, loading, error, searchTerm, setSearchTerm } = useHomeFetch();
